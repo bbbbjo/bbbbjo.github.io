@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="CN">
+<head>
+<meta charset="utf-8">
+<title>青听</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!--Color Themes-->
+<link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
+<!-- logo -->
+<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
+<link rel="icon" href="images/favicon1.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+<!-- 推荐 赵芷馨 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="relaxstyle.css">
+
+<!-- 地图 张闰筱 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+       crossorigin=""/>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+  <!-- preloader start -->
+  <div id="preloader">
+      <div class="preloader">
+          <span></span>
+          <span></span>
+      </div>
+  </div>
+  <!-- preloader end  -->
+
+    <!-- Main Header-->
+<header class="main-header header-style-four">
+    <div class="header-lower">
+        <div class="auto-container">
+            <div class="main-box clearfix">
+                <div class="logo-box">
+                    <div class="logo"><a href="主页.html"><img src="images/logo1.png" alt="" title=""></a></div>
+                </div>
+
+                <div class="nav-outer">
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md ">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon flaticon-menu-button"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix">
+                              <li class="current dropdown"><a href="主页.html">主页</a>
+                              <li><a href="indexA.html">声音</a></li>
+                              <li><a href="个人.html">个人</a></li>
+                              <li style="padding-top:36px;"><i class="bi bi-search" style="color:white;"></i></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--End Main Header -->
+
+<!-- Bnner Section -->
+<section class="banner-section-two">
+    <div class="banner-carousel owl-carousel owl-theme">
+        <!-- Slide Item -->
+        <div class="slide-item" style="background-image: url(images/main-slider/image-4.png);">
+            <div class="auto-container">
+                <div class="content-box">
+                    <span class="title">海</span>
+                    <h2>碧波粼粼 <br>混合蓝色的风</h2>
+                    <div class="video-link">
+                      <a href="video1.mp4" data-fancybox="gallery" data-caption=""><i class="icon fa fa-play" aria-hidden="true"></i></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Item -->
+        <div class="slide-item" style="background-image: url(images/main-slider/image-3.png);">
+            <div class="auto-container">
+                <div class="content-box">
+                    <span class="title">雨</span>
+                    <h2>淅淅沥沥 <br>敲打着绿叶</h2>
+                    <div class="video-link">
+                        <a href="video2.mp4" data-fancybox="gallery" data-caption=""><i class="icon fa fa-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Item -->
+        <div class="slide-item" style="background-image: url(images/main-slider/image-2.png);">
+            <div class="auto-container">
+                <div class="content-box">
+                    <span class="title">冰川</span>
+                    <h2>滔滔汩汩 <br>清澄明净</h2>
+                    <div class="video-link">
+                        <a href="video3.mp4" data-fancybox="gallery" data-caption=""><i class="icon fa fa-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Bnner Section -->
+
+
+<!-- Testimonial Section 介绍-->
+<section class="testimonial-section">
+    <div class="outer-container clearfix">
+        <!-- Title Column -->
+        <div class="title-column clearfix">
+            <div class="inner-column">
+                <div class="sec-title">
+                    <span class="float-text">止水起青音</span>
+                    <h2>青听</h2>
+                </div>
+                <div class="text">生活的惯性不该是重复的疲惫与自我逃离<br>我们都该拥有一份能够让自己安下心来聆听的声音<br>青听可以为你提供舒适的一隅<br>纷扰的世界里，在青听中与自己相遇吧</div>
+            </div>
+        </div>
+
+
+        <!-- Testimonial Column -->
+        <div class="testimonial-column clearfix" style="background-image: url(images/background/4.png);">
+            <div class="inner-column">
+                <div class="testimonial-carousel owl-carousel owl-theme">
+                    <!-- Testimonial Block -->
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <div class="image-box"><img src="images/resource/thumb-1.jpg" alt=""></div>
+                            <div class="text">青听，专注于收录白噪音<br>高画质 高音质<br>为你提供真实的环境感</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Block -->
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <div class="image-box"><img src="images/resource/thumb-2.jpg" alt=""></div>
+                            <div class="text">视频全屏，戴上耳机<br>沉浸在专属于你的小世界</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Block -->
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <div class="image-box"><img src="images/resource/thumb-3.jpg" alt=""></div>
+                            <div class="text">海、风、雨······<br>一切都等待你去探索<br>希望你能找到自己的舒适</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Testimonial Section -->
+
+        <div class="sec-title text-center">
+            <span class="title float-text">推荐</span>
+            <h2 style="margin-top:1px;margin-bottom:1px;">白噪音</h2>
+        </div>
+
+       <!--推荐 赵芷馨-->
+       <style>
+       #content article {
+       	float: ;
+       	margin-right:;
+       	max-width: 400px;
+       	position: relative;
+       	width: 100%;
+       	margin-bottom: ;
+         z-index: 1;
+       }
+       #content article:nth-child(4n+4) {
+       	margin-right: 0;
+       }
+       .post-format-content {
+       	position: absolute;
+       	background: #111;
+         z-index: 1;
+       }
+
+       .content-wrap {
+       	padding: 0;
+       	position: absolute;
+       	text-align: center;
+       	width: 100%;
+       	top: 0;
+       	bottom: 0;
+       	vertical-align: middle;
+       	overflow: hidden;
+         z-index: 1;
+       }
+       .content-wrap h1.entry-title {
+       	display: table;
+       	font-size: 130%;
+       	height: 100%;
+       	text-transform: uppercase;
+       	width: 100%;
+       	margin:0;
+         z-index: 1;
+       }
+       .edit-link {
+       	z-index: 1;
+       }
+       .featured-image {
+       	display: table-cell;
+       	position: relative ;
+       	transition: opacity 0.6s ease-in-out, background .25s ease-in-out;
+       	-moz-transition: opacity 0.6s ease-in-out, background .25s ease-in-out;
+       	-webkit-transition: opacity 0.6s ease-in-out, background .25s ease-in-out;
+       	vertical-align: middle;
+       	z-index: ;
+       	color: #fff;
+       	text-decoration:none;
+       	opacity: 0;
+       }
+       .featured-image:hover {
+       	opacity: 0.8;
+       	color: #fff;
+       	background: rgba(0,0,0,0.3);
+         z-index: ;
+       }
+       .avatar {
+       display: block;
+       margin: 0 ;
+       overflow: hidden;
+       z-index:3;
+       }
+
+       .avatar img {
+       display: block ;
+       border: 0;
+       width: 100%;
+       transform: scale(1);
+       transition: all 1s ease 0s;
+       -webkit-transform: scale(1);
+       -webkit-transform: all 1s ease 0s;
+       z-index:3;
+       }
+
+       .avatar:hover img {
+       transform: scale(1.3);
+       transition: all 1s ease 0s;
+       -webkit-transform: scale(1.3)!important;
+       -webkit-transform: all 1s ease 0s;
+       z-index:3;
+       }
+       </style>
+
+           <!-- Optional JavaScript -->
+           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+           <style>
+           #content article {
+           	float: ;
+           	margin-right:;
+           	max-width: 400px;
+           	position: relative;
+           	width: 100%;
+           	margin-bottom: ;
+             z-index: 1;
+           }
+           #content article:nth-child(4n+4) {
+           	margin-right: 0;
+           }
+           .post-format-content {
+           	position: absolute;
+           	background: #111;
+             z-index: 1;
+           }
+
+           .content-wrap {
+           	padding: 0;
+           	position: absolute;
+           	text-align: center;
+           	width: 100%;
+           	top: 0;
+           	bottom: 0;
+           	vertical-align: middle;
+           	overflow: hidden;
+             z-index: 1;
+           }
+           .content-wrap h1.entry-title {
+           	display: table;
+           	font-size: 130%;
+           	height: 100%;
+           	text-transform: uppercase;
+           	width: 100%;
+           	margin:0;
+             z-index: 1;
+           }
+           .edit-link {
+           	z-index: 1;
+           }
+           .featured-image {
+           	display: table-cell;
+           	position: relative ;
+           	transition: opacity 0.6s ease-in-out, background .25s ease-in-out;
+           	-moz-transition: opacity 0.6s ease-in-out, background .25s ease-in-out;
+           	-webkit-transition: opacity 0.6s ease-in-out, background .25s ease-in-out;
+           	vertical-align: middle;
+           	z-index: ;
+           	color: #fff;
+           	text-decoration:none;
+           	opacity: 0;
+           }
+           .featured-image:hover {
+           	opacity: 0.8;
+           	color: #fff;
+           	background: rgba(0,0,0,0.3);
+             z-index: ;
+           }
+           .avatar {
+           display: block;
+           margin: 0 ;
+           overflow: hidden;
+           z-index:3;
+           }
+
+           .avatar img {
+           display: block ;
+           border: 0;
+           width: 100%;
+           transform: scale(1);
+           transition: all 1s ease 0s;
+           -webkit-transform: scale(1);
+           -webkit-transform: all 1s ease 0s;
+           z-index:3;
+           }
+
+           .avatar:hover img {
+           transform: scale(1.3);
+           transition: all 1s ease 0s;
+           -webkit-transform: scale(1.3)!important;
+           -webkit-transform: all 1s ease 0s;
+           z-index:3;
+           }
+           </style>
+
+               <!-- Optional JavaScript -->
+               <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+               <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+               <!--导航自然-->
+               <div class='container-fluid' style="padding-left:8em;padding-right:8em;">
+               <nav class="navbar  navbar-light">
+                 <a class="navbar-brand" href="#">自然·声音</a>
+               <div class="nav justify-content-end">
+               <li class="nav-item">
+                 <a class="nav-link" style='color:#146964' href="indexA.html">更多>></a>
+               </li>
+             </div>
+             </nav>
+             </div>
+
+             <!--新的尝试-->
+             <div class='container-fluid' style="padding-left:8em;padding-right:8em;">
+             <div class="card-columns">
+             <div id="content">
+
+
+
+               <div class="card  ">
+               <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                   <img src="森林.jpg" class="card-img-top"  alt="...">
+                   <div class="content-wrap">
+                     <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">森林</a></h1>
+                   </div>
+               </article>
+               </div>
+
+
+
+               <div class="card  ">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                 <a href="" class="avatar"><img src="雨.png" class="card-img-top" alt="..."></a>
+                 <div class="content-wrap">
+                   <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">雨声</a></h1>
+                 </div>
+               </article>
+               </div>
+
+
+               <div class="card  ">
+                   <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                 <a href="" class="avatar"><img src="灯塔.jpg"   alt="..."></a>
+                 <div class="content-wrap">
+                   <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">海港</a></h1>
+                 </div>
+               </article>
+               </div>
+
+
+
+               <div class="card ">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                 <a href="" class="avatar"><img src='溪水1.jpg'  class="card-img-top" alt="..."></a>
+                 <div class="content-wrap">
+                   <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">溪水</a></h1>
+                 </div>
+               </article>
+               </div>
+
+
+
+             <div class='col-xs-6'>
+               <div class="card ">
+                   <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                 <a href="" class="avatar"><img src="雪1.jpg"  class="card-img" alt="..."></a>
+                 <div class="content-wrap">
+                   <h1 class="entry-title"><a href="" class="featured-image" style="max-width: 100%;height:auto;" rel="bookmark">雪</a></h1>
+                 </div>
+               </article>
+               </div>
+             </div>
+
+
+
+               <div class="card ">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                 <a href="" class="avatar"><img src="火.png" class="card-img" alt="..."></a>
+                 <div class="content-wrap">
+                   <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">火焰</a></h1>
+                 </div>
+               </article>
+               </div>
+
+
+               <div class="card">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                 <a href="" class="avatar"><img src="海豚长1.jpg"  class="card-img" alt="..."></a>
+                 <div class="content-wrap">
+                   <h1 class="entry-title"><a href="" class="featured-image"  rel="bookmark">生灵</a></h1>
+                 </div>
+               </article>
+               </div>
+
+               <div class="card">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+                 <a href="" class="avatar"><img src="麦浪.jpg"  class="card-img" alt="..."></a>
+                 <div class="content-wrap">
+                   <h1 class="entry-title"><a href="" class="featured-image"  rel="bookmark">麦浪</a></h1>
+                 </div>
+               </article>
+               </div>
+
+
+
+             </div>
+             </div>
+             </div>
+
+             <!--导航人文-->
+             <div class='container-fluid' style="padding-left:8em;padding-right:8em;">
+             <nav class="navbar  navbar-light ">
+               <a class="navbar-brand  " href="#">人文·声音</a>
+             <div class="nav justify-content-end">
+             <li class="nav-item">
+               <a class="nav-link active"  style='color:#146964' href="#">更多>></a>
+             </li>
+             </div>
+             </nav>
+             </div>
+             <!--新的尝试-->
+
+
+             <div class='container-fluid' style="padding-left:8em;padding-right:8em;">
+             <div class="card-columns">
+             <div id="content">
+
+
+             <div class="card ">
+               <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src="街道1.jpg" style='' class="card-img-top" alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">街道</a></h1>
+               </div>
+             </div>
+
+             <div class="card">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src="汽水.jpg" style='' class="card-img-top" alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">汽水</a></h1>
+               </div>
+             </div>
+
+             <div class="card">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src="厨房.jpg" style='' class="card-img-top" alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">厨房</a></h1>
+               </div>
+             </div>
+
+
+             <div class="card">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src="咖啡馆1.jpg" style=''  alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">咖啡馆</a></h1>
+               </div>
+             </div>
+
+
+             <div class="card ">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src='禅.jpg'  class="card-img-top" alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">禅院</a></h1>
+               </div>
+             </div>
+
+             <div class="card">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src="火车.jpg" style='' class="card-img" alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">火车</a></h1>
+               </div>
+             </div>
+
+             <div class="card">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src="风铃.jpg" style='' class="card-img" alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">工业制品</a></h1>
+               </div>
+             </div>
+
+             <div class="card  ">
+                 <article  class="post-152 post type-post status-publish format-standard hentry category-people category-photos avatar">
+               <a href="" class="avatar"><img src="博物馆.jpg"  class="card-img" alt="..."></a>
+               <div class="content-wrap">
+                 <h1 class="entry-title"><a href="" class="featured-image" rel="bookmark">博物馆</a></h1>
+               </div>
+             </div>
+
+             </div>
+             </div>
+             </div>
+
+       <!-- Fun Fact And Features -->
+       <section class="about-section" style="background-image: url(images/background/1.png);">
+         <div class="auto-container">
+             <div class="row no-gutters">
+                 <!-- Image Column -->
+                 <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                     <div class="inner-column">
+                         <div class="title-box wow fadeInLeft" data-wow-delay='1200ms'>
+                             <h2>White <br> Noise</h2>
+                         </div>
+                         <div class="image-box wow fadeInRight" data-wow-delay='600ms'>
+                             <figure class="image"><img src="images/resource/image1-1.jpg" alt=""></figure>
+                         </div>
+                     </div>
+                 </div>
+
+         <!-- Content Column -->
+         <div class="content-column col-lg-6 col-md-12 col-sm-12">
+             <div class="inner-column wow fadeInLeft">
+                 <div class="content-box">
+                     <div class="title">
+                         <h2>白噪音 <br>White Noise</h2>
+                     </div>
+                     <div class="text">白噪音指一段声音中的频率分量的功率在整个可听范围内都是均匀的。相对的其他不具有平坦功率谱性质的噪音被称为有色噪声。
+                                       雨声、流水声等来自大自然的声音是现实世界中最接近白噪音的声音。
+                                       白噪音会制造遮蔽效应使人忽略嘈杂的环境，因此对于不同的人，可能有改善睡眠，缓解躁郁、焦虑的情绪等多样的效果。</div>
+                 </div>
+             </div>
+         </div>
+       </div>
+       </div>
+       </section>
+
+
+
+      <!-- 地图 张闰筱 -->
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+           integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+           crossorigin=""></script>
+         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+         <div class="sec-title text-left">
+                       <span class="float-text">世界之海的声音</span>
+                       <h2>聆听</h2>
+                   </div>
+
+       <div class="container-fluid" style="padding-left:8em;padding-right:8em;">
+
+        <div class="row">
+         <div class="col-sm-4">
+           <div style="display: block;" id="Sea1">
+            <div class="row">
+       <video width="100%" height="100%" controls="controls">
+       <source src="maps-video1.mp4" type="video/mp4"></source>
+       </video>
+       </div>
+           <div class="row" style="padding-top:2em;">
+             <h4>地中海</h4>
+         <p style="padding-top:1em;">地中海是世界上最古老的海之一，这里有古埃及的灿烂文化，有古巴比伦王国和波斯帝国的兴盛，更有欧洲文明的发源地。</p>
+       </div>
+       </div>
+
+       <div style="display: none;" id="Sea2">
+        <div class="row">
+       <video width="100%" height="100%" controls="controls">
+       <source src="maps-video2.mp4" type="video/mp4"></source>
+       </video>
+       </div>
+       <div class="row" style="padding-top:2em;">
+         <h4>死海</h4>
+       <p style="padding-top:1em;">死海是世界上最低的湖泊，死海中的高浓度盐分为一般海水的8.6倍，致使水中没有生物存活，甚至连沿岸陆地上也很少有除水草外生物。</p>
+       </div>
+       </div>
+
+       <div style="display: none;" id="Sea3">
+        <div class="row">
+       <video width="100%" height="100%" controls="controls">
+       <source src="maps-video3.mp4" type="video/mp4"></source>
+       </video>
+       </div>
+       <div class="row" style="padding-top:2em;">
+         <h4>波罗的海</h4>
+       <p style="padding-top:1em;">波罗的海，世界上盐度最低的海，盐度仅在0.7%-0.8%之间，位于北欧。</p>
+       </div>
+       </div>
+
+       <div style="display: none;" id="Sea4">
+        <div class="row">
+       <video width="100%" height="100%" controls="controls">
+       <source src="maps-video4.mp4" type="video/mp4"></source>
+       </video>
+       </div>
+       <div class="row" style="padding-top:2em;">
+         <h4>红海</h4>
+       <p style="padding-top:1em;">红海，古希腊人称为THALASSAERYTHRAE，今名是从古希腊名演化而来的，意译即“红色的海洋”。它是盐度最高的海，是世界重要的石油运输通道。</p>
+       </div>
+       </div>
+
+       <div style="display: none;" id="Sea5">
+        <div class="row">
+       <video width="100%" height="100%" controls="controls">
+       <source src="maps-video5.mp4" type="video/mp4"></source>
+       </video>
+       </div>
+       <div class="row" style="padding-top:2em;">
+         <h4>黑海</h4>
+       <p style="padding-top:1em;">黑海是世界最深的内海之一。黑海本身很深，黑海从河流和地中海流入的水含盐度比较小，因此比较轻，它们浮在含盐度高的海水上。这样深水和浅水之间得不到交流，甚至它们彻底交流一次需要上千年之久。</p>
+       </div>
+       </div>
+
+       <div style="display: none;" id="Sea6">
+        <div class="row">
+       <video width="100%" height="100%" controls="controls">
+       <source src="maps-video6.mp4" type="video/mp4"></source>
+       </video>
+       </div>
+       <div class="row" style="padding-top:2em;">
+         <h4>加勒比海</h4>
+       <p style="padding-top:1em;">加勒比海是位于西半球热带大西洋海域的一个海。加勒比海水文特性的同质性高。以海面的月平均温度为例，各年的变化不超过3°C。</p>
+       </div>
+       </div>
+       </div>
+       <div class="col-sm-8" style="padding-left:4em;padding-bottom:4em">
+         <div id="SoundsMap" style="width:100%;height:420px"></div>
+         <script>
+         var mymap=L.map('SoundsMap').setView([40.25,-3.45],2);
+         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+             maxZoom: 18,
+             id: 'mapbox/streets-v11',
+             tileSize: 512,
+             zoomOffset: -1,
+             accessToken: 'your.mapbox.access.token'
+         }).addTo(mymap);
+
+         var marker1=L.marker([35.0,15.0]).addTo(mymap).bindPopup('<a href="https://baike.baidu.com/item/%E5%9C%B0%E4%B8%AD%E6%B5%B7/11515?fr=aladdin" target="_blank">' + '<img src="地中海.jpg" width = "80px"><br>'+"地中海" + '</a>').on('click',function(){
+           document.getElementById("Sea2").style.display="none";
+           document.getElementById("Sea3").style.display="none";
+           document.getElementById("Sea4").style.display="none";
+           document.getElementById("Sea5").style.display="none";
+           document.getElementById("Sea6").style.display="none";
+           document.getElementById("Sea1").style.display="block";
+         });
+         marker1.openPopup();
+         var marker2=L.marker([31.0,35.0]).addTo(mymap).bindPopup('<a href="https://baike.baidu.com/item/%E6%AD%BB%E6%B5%B7/509?fr=aladdin" target="_blank">' + '<img src="死海.jpg" width = "80px"><br>'+"死海" + '</a>').on('click',function(){
+       document.getElementById("Sea1").style.display="none";
+       document.getElementById("Sea3").style.display="none";
+       document.getElementById("Sea4").style.display="none";
+       document.getElementById("Sea5").style.display="none";
+       document.getElementById("Sea6").style.display="none";
+       document.getElementById("Sea2").style.display="block";
+       });
+         var marker3=L.marker([57.5,19.0]).addTo(mymap).bindPopup('<a href="https://baike.baidu.com/item/%E6%B3%A2%E7%BD%97%E7%9A%84%E6%B5%B7/446433" target="_blank">' + '<img src="波罗的海.jpg" width = "80px"><br>'+"波罗的海" + '</a>').on('click',function(){
+       document.getElementById("Sea1").style.display="none";
+       document.getElementById("Sea2").style.display="none";
+       document.getElementById("Sea4").style.display="none";
+       document.getElementById("Sea5").style.display="none";
+       document.getElementById("Sea6").style.display="none";
+       document.getElementById("Sea3").style.display="block";
+       });
+         var marker4=L.marker([12.0,59.5]).addTo(mymap).bindPopup('<a href="https://baike.baidu.com/item/%E7%BA%A2%E6%B5%B7/25384" target="_blank">' + '<img src="红海.jpg" width = "80px"><br>'+"红海" + '</a>').on('click',function(){
+       document.getElementById("Sea1").style.display="none";
+       document.getElementById("Sea2").style.display="none";
+       document.getElementById("Sea3").style.display="none";
+       document.getElementById("Sea5").style.display="none";
+       document.getElementById("Sea6").style.display="none";
+       document.getElementById("Sea4").style.display="block";
+       });
+         var marker5=L.marker([44,35]).addTo(mymap).bindPopup('<a href="https://baike.baidu.com/item/%E9%BB%91%E6%B5%B7/10976" target="_blank">' + '<img src="黑海.jpg" width = "80px"><br>'+"黑海" + '</a>').on('click',function(){
+       document.getElementById("Sea1").style.display="none";
+       document.getElementById("Sea3").style.display="none";
+       document.getElementById("Sea4").style.display="none";
+       document.getElementById("Sea2").style.display="none";
+       document.getElementById("Sea6").style.display="none";
+       document.getElementById("Sea5").style.display="block";
+       });
+         var marker6=L.marker([15.5,-74.5]).addTo(mymap).bindPopup('<a href="https://baike.baidu.com/item/%E5%8A%A0%E5%8B%92%E6%AF%94%E6%B5%B7/257070" target="_blank">' + '<img src="加勒比海.jpg" width = "80px"><br>'+"加勒比海" + '</a>').on('click',function(){
+       document.getElementById("Sea1").style.display="none";
+       document.getElementById("Sea3").style.display="none";
+       document.getElementById("Sea4").style.display="none";
+       document.getElementById("Sea5").style.display="none";
+       document.getElementById("Sea2").style.display="none";
+       document.getElementById("Sea6").style.display="block";
+       });
+
+         </script>
+       </div>
+        </div>
+       </div>
+
+       <!-- Main Footer -->
+       <footer class="main-footer alternate" style="background-image: url(images/background/5.png);">
+           <div class="auto-container">
+               <!--Widgets Section-->
+               <div class="widgets-section">
+                   <div class="row">
+                       <!--Big Column-->
+                       <div class="big-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
+                           <div class="row">
+                               <!--Footer Column-->
+                               <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                   <div class="footer-widget about-widget">
+                                       <div class="widget-content">
+                                           <div class="text">欢迎你来到青听！<br>
+                                           白噪音轻松柔和的声音有助于让你的身心都得到放松,
+                                           希望在这里你能短暂地逃离现实中的纷扰，找到专属于你的舒适。<br>
+                                           青听·止水起青音</div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!--Footer Column-->
+                               <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                   <div class="footer-widget recent-posts">
+                                       <h2 class="widget-title">团队构成</h2>
+                                        <!--Footer Column-->
+                                       <div class="widget-content">
+                                           <div class="post">
+                                               <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post.jpg" alt=""></a></div>
+                                               <h4>19新媒</h4>
+                                               <ul class="info">
+                                                   <li>中国传媒大学</li>
+                                                   <li>广告学院</li>
+                                               </ul>
+                                           </div>
+
+                                           <div class="post">
+                                               <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post.jpg" alt=""></a></div>
+                                               <h4>19视传</h4>
+                                               <ul class="info">
+                                                 <li>中国传媒大学</li>
+                                                 <li>广告学院</li>
+                                               </ul>
+                                           </div>
+
+                                           <div class="post">
+                                               <div class="thumb"><a href="blog-detail.html"><img src="images/resource/post.jpg" alt=""></a></div>
+                                               <h4>19广告</h4>
+                                               <ul class="info">
+                                                 <li>中国传媒大学</li>
+                                                 <li>广告学院</li>
+                                               </ul>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <!--Big Column-->
+                       <div class="big-column col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                           <div class="row clearfix">
+                               <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                       <h2 class="widget-title">团队成员</h2>
+                                       <div class="widget-content">
+                                           <ul class="list">
+                                               <li><a href="#">刘雨婷</a></li>
+                                               <li><a href="#">叶家莉</a></li>
+                                               <li><a href="#">赵芷馨</a></li>
+                                               <li><a href="#">陈佳瑞</a></li>
+                                               <li><a href="#">房润琦</a></li>
+                                               <li><a href="#">张闰筱</a></li>
+                                               <li><a href="#">赵一凡</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!--Footer Column-->
+                               <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
+                                   <div class="footer-widget gallery-widget">
+                                       <h2 class="widget-title">联系我们</h2>
+                                       <div class="widget-content">
+                                           <div class="text">北京市朝阳区定福庄东街1号<br>
+                                             中国传媒大学广告学院<br>
+                                             电话: +086 1234 5678<br>
+                                             邮箱: relievestress@qq.com
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!--Footer Bottom-->
+           <div class="footer-bottom">
+               <div class="auto-container">
+                   <div class="inner-container clearfix">
+
+                       <div class="copyright-text">
+                           <p>Copyright &copy; 2019.Company name All rights reserved.<a href="http://bootstrap.fans/" title="狮王素材-官网"  target="_blank">狮王素材</a></p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </footer>
+       <!-- End Main Footer -->
+
+
+   </div>
+
+       <!--Scroll to top-->
+       <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-o-up"></span></div>
+       <script src="js/jquery.js"></script>
+       <script src="js/popper.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/jquery.fancybox.js"></script>
+       <script src="js/owl.js"></script>
+       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+       <script src="js/wow.js"></script>
+       <script src="js/appear.js"></script>
+       <script src="js/mixitup.js"></script>
+       <script src="js/script.js"></script>
+       <!-- Color Setting -->
+       <script src="js/color-settings.js"></script>
+       </body>
+       </html>

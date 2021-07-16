@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>青听</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--Color Themes-->
+    <link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
+    <!-- logo -->
+    <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon1.png" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <style>
+
+  .beta {
+    color: #146964;
+    background-color: #ffffff;
+    border-bottom: #ffffff 1px solid;
+    border-top: #ffffff 1px solid;
+    border-left: #ffffff 1px solid;
+    border-right: #ffffff 1px solid;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    width: 120px;
+  }
+  .buttonhover2:hover{
+    color: #146964;
+    background-color: #ffffff;
+    opacity: 0.7;
+  }
+  .buttonavtive2:active{color: #ffffff;
+background-color: #bfbfbf;
+  }
+
+
+  </style>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawSeriesChart);
+    function drawSeriesChart() {
+
+            var data = google.visualization.arrayToDataTable([
+              ['分类', '点击频次(次)', '单次时长（分钟）',  '',  '总时长（分钟）'],
+              ['森林',    6,       8,       1,      48],
+              ['火焰',    18,      20,      2,      160],
+              ['街道',    3,       6 ,      3,      18],
+              ['海洋',    5,       22,      4,      110],
+              ['咖啡馆',    9,       7,       5,      63],
+              ['动物',    2,       4.5,     6,      9 ],
+              ['厨房',  20,      4,       7,      80],
+
+            ]);
+
+            var options = {
+              title: '喜欢的音乐类型',
+              chartArea:{width:'100%',height:'100%'},
+              backgroundColor:{fill:'none'},
+              titleTextStyle:{
+              fontSize:18,
+              color: '#696969'},
+              tooltip:{
+                textStyle: {color: '#3d3d3d'},
+                showColorCode: false,
+              },
+              Legend:{position:'top'},
+              hAxis: {
+                ticks: [5,10,15,20,25],
+                fontSize: 6,
+                gridlines:{color: '#dfdfdf'},
+                italic: false},
+              vAxis: {
+                ticks: [5,10,15,20,25,30],
+                color: '#dfdfdf',
+                textStyle:{
+                fontSize: 12,
+                italic: false}},
+              sizeAxis:{minValue: 0,  maxSize: 55},
+              animation:{easing:'inAndOut',
+              duration:'1000',
+              startup:true},
+              lineWidth: 10,
+              chartArea:{strokeWidth:3},
+              colorAxis: {minValue: 0, maxValue: 7, colors:['#61bd6a','#58c1d1'],
+              legend:{position:'none'}},
+              bubble: {
+              stroke:'#146964',
+              strokeWidth:3,
+              opacity:0.4,
+              textStyle: {fontSize: 12,
+              color: 'white',
+              bold: true,
+              auraColor: 'none'
+              }
+              }
+            };
+
+            var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+            chart.draw(data, options);
+          }
+</script>
+  </head>
+
+  <body>
+    <!-- Main Header-->
+    <header class="main-header header-style-four">
+    <div class="header-lower">
+        <div class="auto-container">
+            <div class="main-box clearfix">
+                <div class="logo-box">
+                    <div class="logo"><a href="主页.html"><img src="images/logo1.png" alt="" title=""></a></div>
+                </div>
+
+                <div class="nav-outer">
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md ">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon flaticon-menu-button"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix">
+                              <li><a href="主页.html">主页</a></li>
+                              <li><a href="indexA.html">声音</a></li>
+                              <li class="current dropdown"><a href="个人.html">个人</a>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                    <!-- Outer Box-->
+                    <div class="outer-box">
+                        <!--Search Box-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <!--End Main Header -->
+<img src="./assets/img/咖啡馆3.jpg" class="img-fluid" alt="...">
+<div class="col-10 mx-auto">
+<div class="card card-user mt-1 shadow-sm rounded">
+<div class="author">
+    <img class="avatar border-gray" src="./assets/img/头像_logo.png" alt="...">
+
+    <h5 class="title text-center">解压鸭</h5>
+    <p class="card-text text-center text-muted">解压放松我最行~</p>
+      <!--<img href="#" src="icons1.png" role="button" class="btn buttonhover2 col-6">-->
+      <button class="beta buttonhover2 buttonavtive2 mt-2" type="button">
+         <svg xmlns="http://www.w3.org/2000/svg" class="mt-1" width="35" height="35" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+           <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+         </svg>
+         </br>
+         &nbsp收&nbsp藏&nbsp</button>
+      <button class=" beta buttonhover2 buttonavtive2 mt-2" type="button">
+         <svg xmlns="http://www.w3.org/2000/svg" class="mt-1" width="35" height="35" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+           <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+           <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+         </svg>
+         </br>
+         &nbsp历&nbsp史&nbsp</button>
+      <button class="buttonavtive2 beta buttonhover2 mt-2" type="button">
+         <svg xmlns="http://www.w3.org/2000/svg" class="mt-1" width="35" height="35" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+           <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+           <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+         </svg>
+         </br>
+         &nbsp已&nbsp购&nbsp</button>
+      <button class="beta buttonhover2 buttonavtive2 mt-2" type="button">
+         <svg xmlns="http://www.w3.org/2000/svg" class="mt-1" width="35" height="35" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+           <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+           <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+         </svg>
+         </br>
+         &nbsp会&nbsp员&nbsp</button>
+      <button class="beta buttonhover2 buttonavtive2 mt-2 mb-2" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" class="mb-1 mt-1" fill="currentColor" class="bi bi-cloud-arrow-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
+          <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+        </svg>
+        </br>
+        &nbsp缓&nbsp存&nbsp</button>
+      <button class="beta buttonhover2 buttonavtive2 mt-2 mb-2" type="button">
+         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" class="mb-1 mt-1" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+           <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+           <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+        </svg>
+        </br>
+        &nbsp设&nbsp置&nbsp</button>
+    </div>
+   </div>
+ </div>
+</div>
+
+
+<div class="row d-flex justify-content-center">
+  <div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+  <div class="card mr-2 col-md-2 col-sm-6 col-xm-12" >
+    <div class="card-body" >
+    <h6 class="title text-center mt-2">回顾我的一周</h6>
+    <p class="text-center mt-3 small">本周你一共听了<strong>440分钟</strong></br>
+      其中<strong>周六</strong>听时间最长，</br>共99分钟,</br>比上周多<strong>15%</strong>,
+    </br>希望下周的你，</br>也能聆听大自然的慰藉~</p>
+  </div>
+  <img src="咖啡馆.png">
+  </div>
+  <div class="card shadow-sm rounded col-md-6 col-sm-12" style='background-image: url("雪.png")'>
+  <canvas id="myChart2" class="mt-3"></canvas>
+</div>
+<div class="card shadow-sm rounded col-md-3 col-sm-6 col-xm-12 ml-2">
+  <div class="card-body text-center">
+      <h6 class="title text-center mt-2">每日TOP音乐</h6>
+      <img href="" src="森林.jpg" class="rounded-circle mt-2" role="button" style="width: 2.8rem;">
+      <span class="ml-2"><strong>周一&nbsp&nbsp&nbsp</strong>奥林匹克森林公园</span></br>
+      <img href="" src="黑海2.jpg" class="rounded-circle mt-2" role="button" style="width: 2.8rem;">
+      <span class="ml-2"><strong>周二&nbsp&nbsp&nbsp</strong>黑海旖旎优雅风光</span></br>
+      <img href="" src="火.png" class="rounded-circle mt-2" role="button" style="width: 2.8rem;">
+      <span class="ml-2"><strong>周三&nbsp&nbsp&nbsp</strong>霍格沃茨冬日炉火</span></br>
+      <img href="" src="火.png" class="rounded-circle mt-2" role="button" style="width: 2.8rem;">
+      <span class="ml-2"><strong>周四&nbsp&nbsp&nbsp</strong>霍格沃茨冬日炉火</span></br>
+      <img href="" src="厨房2.jpg" class="rounded-circle mt-2" role="button" style="width: 2.8rem;">
+      <span class="ml-2"><strong>周五&nbsp&nbsp&nbsp</strong>厨房烹饪声响合集</span></br>
+      <a>更多>></a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="card card-body col-4 ml-5 mr-2">
+    <h4 class="mt-1 text-center">音乐类型偏好TOP3</h4>
+    <p class="small text-center">我的音乐类型偏好TOP3为火焰、海洋、厨房</p>
+    <img class="mt-1" src="火2.png">
+    <img class="mt-1" src="黑海2.png">
+    <img class="mt-1" src="厨房2.png">
+  </div>
+  <div id="series_chart_div" class="card col-7 shadow-sm rounded"  style='width: 1000px; height: 500px;background-image: url("雨1.png")'></div>
+</div>
+</div>
+
+
+
+
+<script>
+      var ctx = document.getElementById('myChart2');
+      var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六','星期天'],
+              datasets: [{
+                  label: '# 时长（min）',
+                  data: [35, 67, 84, 72, 27, 99, 56],
+                  backgroundColor: [
+                     'rgba(47, 155, 60, 0.3)',
+                      'rgba(20, 135, 110, 0.3)',
+                      'rgba(57, 179, 163, 0.3)',
+                      'rgba(112, 172, 173, 0.3)',
+                      'rgba(110, 206, 178, 0.3)',
+                      'rgba(60, 178, 179, 0.3)',
+                      'rgba(20, 86, 105, 0.3)',
+                  ],
+                  borderColor: [
+                      'rgba(20, 105, 110, 0.8)',
+                  ],
+                  borderRadius:Number.MAX_VALUE,
+                  borderWidth:1.5,
+                hoverBorderWidth:2,
+                hoverBorderColor:'rgba(20, 105, 110, 1)',
+                hoverBackgroundColor:[
+                  'rgba(47, 155, 60, 0.5)',
+                   'rgba(20, 135, 110, 0.5)',
+                   'rgba(57, 179, 163, 0.5)',
+                   'rgba(112, 172, 173, 0.5)',
+                   'rgba(110, 206, 178, 0.5)',
+                   'rgba(60, 178, 179, 0.5)',
+                   'rgba(20, 86, 105, 0.5)',
+                ]
+              }]
+          },
+          options: {
+            responsive: true,
+            plugins:{
+      title:{
+      display:true,
+      text:'每周音乐播放时长',
+      font:{
+        size:15
+      },
+      legend:{
+          display:true,
+          position:"right",
+          labels:{
+            font:{
+              size:22
+         }
+        }
+      }
+    }
+  },
+  animation:{
+      duration:2000,
+      easing:'easeInOutSine',
+    },
+  scales: {
+  y: {
+  beginAtZero: true
+    }
+   }
+  },
+      });
+      </script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
